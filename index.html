@@ -2758,7 +2758,7 @@ html, body{
         <div class="char-title-line"><h3>👜 セイリスト</h3><span class="char-best-inline" id="charbest-セイリスト">BEST 0</span></div>
         <span class="char-badge">安定型</span>
       </div>
-      <p class="char-onepoint">手札整理が得意で安定して生き残りやすい。<br><span class="char-skill-line">スキル：整理整頓（8） 選択した原子を1つ消去</span></p>
+      <p class="char-onepoint">手札整理が得意で安定して生き残りやすい。<br><span class="char-skill-line">スキル：整理整頓（5） 選択した原子を1つ消去</span></p>
       <p class="char-power">所持10 / 予知2 / ScrapBOX 10</p>
       <p class="char-unlock-line">1プレイで30種類作ると解放</p>
       
@@ -2803,7 +2803,7 @@ html, body{
         <span class="char-badge">酸素供給型</span>
       </div>
       <p class="char-onepoint">森の力で酸素を生み出す王。<br><span class="char-skill-line">スキル：光合成（15） 残りの所持枠をすべて酸素で埋める</span></p>
-      <p class="char-power">所持10 / 予知1 / ScrapBOX 5</p>
+      <p class="char-power">所持11 / 予知1 / ScrapBOX 5</p>
       <p class="char-unlock-line">1プレイで水を10個作ると解放</p>
       
     </div>
@@ -2814,7 +2814,7 @@ html, body{
         <span class="char-badge">スクラップ特化型</span>
       </div>
       <p class="char-onepoint">金属処理が得意な職人タイプ。<br><span class="char-skill-line">スキル：金属回収（8） 選択中の金属をまとめてScrapBOXへ送る</span></p>
-      <p class="char-power">所持10 / 予知1 / ScrapBOX 14</p>
+      <p class="char-power">所持11 / 予知1 / ScrapBOX 14</p>
       <p class="char-unlock-line">スクラップを合計30個溶かすと解放</p>
       
     </div>
@@ -2825,7 +2825,7 @@ html, body{
         <span class="char-badge">収集特化型</span>
       </div>
       <p class="char-onepoint">欲しい原子を引き寄せる収集の達人。<br><span class="char-skill-line">スキル：神の手（25） 好きな原子を1つ選び手札に加える。</span></p>
-      <p class="char-power">所持11 / 予知1 / ScrapBOX 5</p>
+      <p class="char-power">所持10 / 予知1 / ScrapBOX 6</p>
       <p class="char-unlock-line">7キャラでゲームクリアすると解放</p>
       
     </div>
@@ -2903,13 +2903,13 @@ const STORAGE_WATER_PLAY_KEY = 'chem_v63_bestWaterOnePlay';
 
 const CHARACTER_CONFIG = {
   'ベーシック': { handMax: 12, nextVisible: 1, nextSlots: 2, manualDraw: 2, autoDraw: 2, scrapMax: 8, unlockType: 'default', unlockReq: 0, skillCharge: 10, skillName: 'ワンドロー', skillDesc: '次のドローを1枚に変更（5回）' },
-  'セイリスト': { handMax: 10, nextVisible: 2, nextSlots: 2, manualDraw: 2, autoDraw: 2, scrapMax: 10, unlockType: 'col', unlockReq: 30, skillCharge: 8, skillName: '整理整頓', skillDesc: '手札1枚を削除する' },
+  'セイリスト': { handMax: 10, nextVisible: 2, nextSlots: 2, manualDraw: 2, autoDraw: 2, scrapMax: 10, unlockType: 'col', unlockReq: 30, skillCharge: 5, skillName: '整理整頓', skillDesc: '手札1枚を削除する' },
   'ミライシ': { handMax: 11, nextVisible: 3, nextSlots: 3, manualDraw: 2, autoDraw: 2, scrapMax: 6, unlockType: 'col', unlockReq: 118, skillCharge: 10, skillName: '未来回収', skillDesc: 'NEXTから1つ選んで先に取る' },
   'ウンマカセ': { handMax: 14, nextVisible: 0, nextSlots: 2, manualDraw: 2, autoDraw: 2, scrapMax: 8, unlockType: 'score', unlockReq: 20000, skillCharge: 5, skillName: 'ギャンブル', skillDesc: '手札の元素1つがランダムな別原子に変化する' },
   'カガクシャ': { handMax: 14, nextVisible: 2, nextSlots: 2, manualDraw: 2, autoDraw: 2, scrapMax: 3, unlockType: 'playKinds', unlockReq: 50, skillCharge: 20, skillName: '培養', skillDesc: '選択した原子を1つ手札に増やす' },
-  'スクラップマン': { handMax: 10, nextVisible: 1, nextSlots: 2, manualDraw: 2, autoDraw: 2, scrapMax: 14, unlockType: 'melt', unlockReq: 10, skillCharge: 8, skillName: '金属回収', skillDesc: '選択中の金属をまとめてScrapBOXへ送る' },
-  'モリノオウ': { handMax: 10, nextVisible: 1, nextSlots: 2, manualDraw: 2, autoDraw: 2, scrapMax: 5, unlockType: 'hidden', unlockReq: 0, skillCharge: 15, skillName: '光合成', skillDesc: '空いている所持枠をすべて酸素で埋める' },
-  'ケミカルコレクター': { handMax: 11, nextVisible: 1, nextSlots: 2, manualDraw: 2, autoDraw: 2, scrapMax:  5, unlockType: 'hidden2', unlockReq: 0, skillCharge: 25, skillName: '神の手', skillDesc: '好きな原子を1つ選び手札に加える。' }
+  'スクラップマン': { handMax: 11, nextVisible: 1, nextSlots: 2, manualDraw: 2, autoDraw: 2, scrapMax: 14, unlockType: 'melt', unlockReq: 10, skillCharge: 8, skillName: '金属回収', skillDesc: '選択中の金属をまとめてScrapBOXへ送る' },
+  'モリノオウ': { handMax: 11, nextVisible: 1, nextSlots: 2, manualDraw: 2, autoDraw: 2, scrapMax: 5, unlockType: 'hidden', unlockReq: 0, skillCharge: 15, skillName: '光合成', skillDesc: '空いている所持枠をすべて酸素で埋める' },
+  'ケミカルコレクター': { handMax: 10, nextVisible: 1, nextSlots: 2, manualDraw: 2, autoDraw: 2, scrapMax:  6, unlockType: 'hidden2', unlockReq: 0, skillCharge: 25, skillName: '神の手', skillDesc: '好きな原子を1つ選び手札に加える。' }
 };
 
 const CHARACTER_EMOJI = {
