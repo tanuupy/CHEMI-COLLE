@@ -1,0 +1,8 @@
+{
+  "name": "Chemical Collection",
+  "short_name": "Chemicolle",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff"
+}
